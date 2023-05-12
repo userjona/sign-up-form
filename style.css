@@ -1,3 +1,8 @@
+:root {
+  --logo-color: #f6b1c4;
+  --bg-color: #1a191d;
+  color: white;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -12,13 +17,14 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+  margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -43,10 +49,9 @@ table {
 	border-spacing: 0;
 }
 
-
 body {
   display: flex;
-  background-color: #1a191d;
+  background-color: var(--bg-color);
   height: 100vh;
 }
 
@@ -58,7 +63,6 @@ body {
   background-size: cover;
   background-image: url(./images/logo.png);
   background-repeat: no-repeat;
-
 }
 
 #logo-wrd{
@@ -68,7 +72,7 @@ body {
   padding: 20px;
   padding-left: 70px;
   max-height: 20px;
-  color: #f6b1c4;
+  color:var(--logo-color);
   font-weight: bold;
   font-family: 'Aboreto';
   font-size: 1.5rem;
@@ -82,6 +86,45 @@ body {
   background-position: -2% 45%;
   background-repeat: no-repeat;
 }
+
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 500px;
+  height: 200px;
+  gap: 20px;
+}
+
+#ctn-form {
+  display: flex;
+  flex-direction: column;
+  max-height: 40px;
+  flex: 1;
+}
+
+input {
+  padding: .3rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--logo-color);
+  box-shadow: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+
+
 
 
 
