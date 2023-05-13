@@ -13,27 +13,38 @@
 
 <body>
   <div id="container">
-      <div id="logo-wrd">URUBU DO PIX</div>
+    <div id="logo-wrd">URUBU DO PIX</div>
+  </div>
+  <div id="advice">
   </div>
   <div class="form">
-    <form class="form-wrapper">
-      <div id="ctn-form">
-        <label for="name">First Name</label>
-        <input type="text" id="name" name="name">
-      </div>
-      <div id="ctn-form">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="user-mail">
-      </div>
-      <div id="ctn-form">
-        <label for="phone">Phone</label>
-        <input type="number" id="phone" name="user-phone">
-      </div>        
-      <div id="ctn-form">
-        <label for="phone">Phone</label>
-        <input type="number" id="phone" name="user-phone">
-      </div>        
-    </form>
+    <form class="form-wrapper" action="#" method="get">
+        <div id="ctn-form">
+          <label for="fname">FIRST NAME</label>
+          <input type="text" id="fname" name="name" required>
+        </div>
+        <div id="ctn-form">
+          <label for="lname">LAST NAME</label>
+          <input type="text" id="lname" name="lname" required>
+        </div>
+        <div id="ctn-form">
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="user-mail" required>
+        </div>
+        <div id="ctn-form">
+          <label for="phone">PHONE</label>
+          <input type="text" id="phone" name="user-phone" pattern="(\d{2}([\-]\d{5}([\-]\d{4}))" required>
+        </div>
+        <div id="ctn-form">
+          <label for="pwd">PASSWORD</label>
+          <input type="password" id="pwd" name="user-password" required>
+        </div>
+        <div id="ctn-form">
+          <label for="cpwd">CONFIRM PASSWORD</label>
+          <input type="password" id="cpwd" name="user-password" required>
+        </div>
+          <button type="submit" id="btn">Create Account</button>
+      </form>
   </div>
 </body>
 
